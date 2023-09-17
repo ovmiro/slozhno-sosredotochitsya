@@ -1,12 +1,45 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
+/* Специально для светлой темы при наличии класса. Здесь окажутся стили, которые нужно переопределить принудительно, переключая тему */
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+	/* сохраните этот селектор в приведённом виде. Так стили написанные ниже будут иметь больший вес, чем стили в медиазапросе предпочтений пользователя */
+	 background: var(--light-color);
+}
+ .page.theme_light .header {
+	 background-image: url("../images/bottom-left-frame-light.svg"), url("../images/top-right-frame-light.svg"), url("../images/promo-bg-light.jpg");
+}
+ .page.theme_light .header__menu-btn {
+	 color: var(--dark-color);
+}
+ .page.theme_light .header__menu-btn_active {
+	 border-color: var(--dark-color);
+}
+ .page.theme_light .header__menu-btn:focus {
+	 border-bottom: 1px solid var(--dark-color);
+}
+ .page.theme_light .header__menu-btn:hover {
+	 border-color: var(--dark-color);
+}
+ .page.theme_light .header__top-text {
+	 display: none;
+}
+ .page.theme_light .heading {
+	 color: var(--pink-color);
+	 text-shadow: 4px 4px 0px var(--accent-color);
+}
+ .page.theme_light .subheading, .page.theme_light .list__item-heading, .page.theme_light .section__col-text, .page.theme_light .images-section__heading {
+	 color: var(--dark-color);
+	 background:var(--bg-color);
+}
+ .page.theme_light .section-heading, .page.theme_light .list__item-text {
+	 color: var(--dark-color);
+}
+ .page.theme_light .footer__text {
+	 color: var(--pink-color);
+	 text-shadow: 2px 2px 0px var(--accent-color);
+}
+ .page.theme_light .text-link {
+	 color: var(--dark-color);
+	 text-shadow: 2px 2px 0px var(--bg-color);
+}
+ .page.theme_light .text-link::after {
+	 border: 1px solid var(--dark-color);
 }

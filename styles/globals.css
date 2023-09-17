@@ -7,9 +7,12 @@
 }
 
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
+ min-inline-size: 375px;
+ max-inline-size: 1440px;
+ margin:0 auto;
+ font-family: var(--main-font-family, monospace);
+ background:var(--section-title-color);
+ transition: .20s;
 }
 
 h1,
@@ -22,11 +25,12 @@ p {
   margin: 0;
 }
 
-ul {
+ul,li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 
 picture {
   margin: 0;
@@ -39,4 +43,18 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+section {
+  display: block;
+  margin-bottom:80px;
+}
+
+section:last-child {
+  margin-bottom: 60px;
+}
+
+button {
+  border: none;
+  background:none;
 }
